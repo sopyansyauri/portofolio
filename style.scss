@@ -1,0 +1,322 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$primaryColor: rgb(3, 10, 21);
+$secondaryColor: rgb(243, 83, 83);
+$thirdColor: rgb(255, 255, 255);
+
+// UNTUK CONTAINER
+.container {
+    width: 90%;
+    // display: flex;
+    margin: auto;
+}
+
+// UNTUK NAVBAR
+.navbar {
+    position: absolute;
+    // width: 90%;
+    // z-index: 1000;
+    width: 100%;
+
+    .container {
+        // width: 90%;
+        // position: absolute;
+        display: flex;
+        justify-content: space-between;
+        // border: 1px solid black;
+        padding: 10px 0;
+
+        .logo a,
+        span {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 20px;
+        }
+
+        ul li a {
+            font-family: 'Bodoni Moda', serif;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: $thirdColor;
+        transition: 1s;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline;
+        padding-top: 5px;
+        // border: 1px solid black;
+        padding-left: 30px;
+    }
+
+    li a:hover {
+        color: $secondaryColor;
+    }
+}
+
+// UNTUK DATA1 
+.data1 {
+    .container {
+        z-index: -999;
+        width: 100%;
+        height: 500px;
+        background-color: aqua;
+        text-align: center;
+        padding-top: 250px;
+        background-image: url("gambar/background.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .banner {
+            img {
+                width: 125px;
+                border-radius: 50%;
+            }
+
+            h1 {
+                color: $secondaryColor;
+                font-size: 50px;
+                font-family: 'Bodoni Moda', serif;
+            }
+
+            p {
+                color: $thirdColor;
+                font-size: 25px;
+                padding-top: 10px;
+                padding-bottom: 40px;
+                font-family: 'Bodoni Moda', serif;
+
+            }
+
+            button {
+                padding: 25px;
+                border-radius: 20px;
+                background-color: rgba(255, 255, 255, 0);
+                color: $thirdColor;
+                border: 2px solid $secondaryColor;
+            }
+
+            button:hover {
+                background-color: $secondaryColor;
+            }
+        }
+    }
+}
+
+// UNTUK DATA2
+.data2 {
+    .container {
+        .dataDiri {
+            .about {
+                // border: 1px solid black;
+                text-align: center;
+
+                h2 {
+                    padding: 20px 0;
+                }
+
+                .garis {
+                    width: 5%;
+                    height: 7px;
+                    border-radius: 5px;
+                    background-color: $secondaryColor;
+                    margin: auto;
+                }
+            }
+
+            .pengenalan1 {
+                padding-top: 20px;
+                display: flex;
+
+                img {
+                    width: 500px;
+                }
+
+                .pengenalan2 {
+                    h3 {
+                        padding: 0 15px;
+                    }
+
+                    .pengalaman {
+                        padding: 20px 15px 20px 15px;
+                    }
+
+                    .biodata {
+                        padding: 10px 15px 20px 15px;
+                        // span {
+                        //     padding-left: 40px;
+                        // }
+                    }
+
+                    .tombol {
+                        padding-top: 15px;
+                        text-align: center;
+                        justify-content: space-evenly;
+
+                        button {
+                            padding: 15px;
+                            background-color: rgba(255, 255, 255, 0);
+                        }
+
+                        .tombol1 {
+                            background-color: $secondaryColor;
+                            color: white;
+                        }
+
+                        .tombol2 {
+                            color: $secondaryColor;
+                            border: 1px solid $secondaryColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Untuk MySkill\
+.my-skill {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .data-skill {
+            // border: 1px solid black;
+            margin-left: 10px;
+            width: 50%;
+
+            div {
+                width: 100%;
+                height: 25px;
+                background-color: $secondaryColor;
+                padding-top: 4px;
+                color: white;
+            }
+
+            span {
+                padding-left: 50%;
+            }
+
+            section {
+                margin-bottom: 15px;
+            }
+        }
+
+        .judul-skill {
+            margin-right: 10px;
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+// Untuk Mobile
+
+@media (max-width: 768px) {
+
+    // Untuk navbar
+    .navbar {
+        .container {
+            ul li a {
+                font-size: 3px;
+            }
+
+            .logo a,
+            span {
+                font-size: 15px;
+            }
+
+            ul {
+                // border: 1px solid white;
+                // padding: 0;
+                width: 50%;
+
+                li {
+                    padding: 0;
+
+                    a {
+
+                        font-size: 10px;
+                        margin-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Untuk Data1 
+    .data1 {
+        .container {
+            .banner {
+                h1 {
+                    font-size: 40px;
+                }
+                p {
+                    font-size: 20px;
+                }
+                button {
+                    padding: 20px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    // Untuk Data2
+    .data2 {
+        .container {
+            .dataDiri {
+                .about {
+                    h2 {
+                        font-size: 20px;
+                        padding-bottom: 10px;
+                    }
+                }
+                .pengenalan1 {
+                    display: block;
+                    img {
+                        width: 50%;
+                        padding-left: 25%;
+                    }
+                }
+                .pengenalan2 {
+                    padding-top: 20px;
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+
+    // Untuk My Skill
+    .my-skill {
+        .container {
+            display: block;
+            .data-skill {
+                // border: 1px solid black;
+                width: 100%;
+                margin: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+}

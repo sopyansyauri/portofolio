@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.navbar {
+  position: absolute;
+  width: 100%;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.navbar .container .logo a,
+.navbar .container span {
+  font-family: "Bodoni Moda", serif;
+  font-size: 20px;
+}
+.navbar .container ul li a {
+  font-family: "Bodoni Moda", serif;
+}
+.navbar a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: 1s;
+}
+.navbar li {
+  list-style-type: none;
+  display: inline;
+  padding-top: 5px;
+  padding-left: 30px;
+}
+.navbar li a:hover {
+  color: rgb(243, 83, 83);
+}
+
+.data1 .container {
+  z-index: -999;
+  width: 100%;
+  height: 500px;
+  background-color: aqua;
+  text-align: center;
+  padding-top: 250px;
+  background-image: url("gambar/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.data1 .container .banner img {
+  width: 125px;
+  border-radius: 50%;
+}
+.data1 .container .banner h1 {
+  color: rgb(243, 83, 83);
+  font-size: 50px;
+  font-family: "Bodoni Moda", serif;
+}
+.data1 .container .banner p {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  font-family: "Bodoni Moda", serif;
+}
+.data1 .container .banner button {
+  padding: 25px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(243, 83, 83);
+}
+.data1 .container .banner button:hover {
+  background-color: rgb(243, 83, 83);
+}
+
+.data2 .container .dataDiri .about {
+  text-align: center;
+}
+.data2 .container .dataDiri .about h2 {
+  padding: 20px 0;
+}
+.data2 .container .dataDiri .about .garis {
+  width: 5%;
+  height: 7px;
+  border-radius: 5px;
+  background-color: rgb(243, 83, 83);
+  margin: auto;
+}
+.data2 .container .dataDiri .pengenalan1 {
+  padding-top: 20px;
+  display: flex;
+}
+.data2 .container .dataDiri .pengenalan1 img {
+  width: 500px;
+}
+.data2 .container .dataDiri .pengenalan1 .pengenalan2 h3 {
+  padding: 0 15px;
+}
+.data2 .container .dataDiri .pengenalan1 .pengenalan2 .pengalaman {
+  padding: 20px 15px 20px 15px;
+}
+.data2 .container .dataDiri .pengenalan1 .pengenalan2 .biodata {
+  padding: 10px 15px 20px 15px;
+}
+.data2 .container .dataDiri .pengenalan1 .pengenalan2 .tombol {
+  padding-top: 15px;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.data2 .container .dataDiri .pengenalan1 .pengenalan2 .tombol button {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.data2 .container .dataDiri .pengenalan1 .pengenalan2 .tombol .tombol1 {
+  background-color: rgb(243, 83, 83);
+  color: white;
+}
+.data2 .container .dataDiri .pengenalan1 .pengenalan2 .tombol .tombol2 {
+  color: rgb(243, 83, 83);
+  border: 1px solid rgb(243, 83, 83);
+}
+
+.my-skill .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.my-skill .container .data-skill {
+  margin-left: 10px;
+  width: 50%;
+}
+.my-skill .container .data-skill div {
+  width: 100%;
+  height: 25px;
+  background-color: rgb(243, 83, 83);
+  padding-top: 4px;
+  color: white;
+}
+.my-skill .container .data-skill span {
+  padding-left: 50%;
+}
+.my-skill .container .data-skill section {
+  margin-bottom: 15px;
+}
+.my-skill .container .judul-skill {
+  margin-right: 10px;
+}
+.my-skill .container .judul-skill p {
+  margin-bottom: 10px;
+}
+.my-skill .container .judul-skill h2 {
+  padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar .container ul li a {
+    font-size: 3px;
+  }
+  .navbar .container .logo a,
+.navbar .container span {
+    font-size: 15px;
+  }
+  .navbar .container ul {
+    width: 50%;
+  }
+  .navbar .container ul li {
+    padding: 0;
+  }
+  .navbar .container ul li a {
+    font-size: 10px;
+    margin-left: 4px;
+  }
+  .data1 .container .banner h1 {
+    font-size: 40px;
+  }
+  .data1 .container .banner p {
+    font-size: 20px;
+  }
+  .data1 .container .banner button {
+    padding: 20px;
+    font-size: 15px;
+  }
+  .data2 .container .dataDiri .about h2 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .data2 .container .dataDiri .pengenalan1 {
+    display: block;
+  }
+  .data2 .container .dataDiri .pengenalan1 img {
+    width: 50%;
+    padding-left: 25%;
+  }
+  .data2 .container .dataDiri .pengenalan2 {
+    padding-top: 20px;
+    padding-left: 0;
+  }
+  .my-skill .container {
+    display: block;
+  }
+  .my-skill .container .data-skill {
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=style.css.map */
